@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MNKotlin</string>
+    <string name="facebook_app_id">230999801412446</string>
+    <string name="fb_login_protocol_scheme">fb230999801412446</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="kakao_app_key">eea2c308c2629fbddfd9331e3a98b6a0</string>
+    <string-array name="use">
+        <item>사진을 찍거나 갤러리에서 선택해주세요</item>
+        <item>선택된 사진을 머신러닝을 통해 분석합니다</item>
+
+    </string-array>
+</resources>

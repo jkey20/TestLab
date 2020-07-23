@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        android:id="@+id/selectPictureFragment"
+        android:name="org.first.mnkotlin.SelectPictureFragment"
+        android:label="SelectPictureFragment"
+        tools:layout="@layout/fragment_select_picture">
+        <action
+            android:id="@+id/action_selectPictureFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="org.first.mnkotlin.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment2_to_selectPictureFragment"
+            app:destination="@id/selectPictureFragment"
+            app:popUpTo="@id/loginFragment2"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/food5Fragment"
+        android:name="org.first.mnkotlin.foodFragemnts.Food5Fragment"
+        android:label="Food5Fragment"
+        tools:layout="@layout/fragment_food5">
+        <action
+            android:id="@+id/action_food5Fragment_to_selectPictureFragment"
+            app:destination="@id/selectPictureFragment" />
+    </fragment>
+</navigation>

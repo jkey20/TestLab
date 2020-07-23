@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginTop="0dp"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <ListView
+
+                    android:id="@+id/LLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_weight="3"
+                    android:choiceMode="singleChoice">
+
+
+                </ListView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</layout>

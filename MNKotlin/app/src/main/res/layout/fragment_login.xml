@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.first.mnkotlin.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookloginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.facebook.login.widget.LoginButton>
+
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakaologinbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleloginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+        </com.google.android.gms.common.SignInButton>
+
+         </LinearLayout>
+</layout>

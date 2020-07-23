@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.first.mnkotlin.MainActivity">
+
+    <data>
+        <variable
+            name="vm"
+            type="org.first.mnkotlin.foodFragemnts.Food5ViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/glideimage"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            setImage="@{vm.url}"
+            ></ImageView>
+    </LinearLayout>
+</layout>

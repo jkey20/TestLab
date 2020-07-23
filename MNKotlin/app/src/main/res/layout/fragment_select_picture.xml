@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gallery_imageview"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@color/browser_actions_divider_color" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gallery_imageview"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <com.skydoves.elasticviews.ElasticButton
+                        android:id="@+id/camera_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gallery_imageview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Camera"
+                        app:button_duration="150" />
+
+                    <com.skydoves.elasticviews.ElasticButton
+                        android:id="@+id/gallery_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gallery_imageview"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:onClick="openGallery"
+                        android:text="Gallery"
+                        app:button_duration="150">
+
+                    </com.skydoves.elasticviews.ElasticButton>
+                </TableRow>
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/logincheck_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="goToProfilePage"
+
+                    android:text="로그인 정보"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </com.skydoves.elasticviews.ElasticButton>
+
+                <com.tomer.fadingtextview.FadingTextView
+                    android:id="@+id/fading_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:texts="@array/use"
+                    app:timeout="500"></com.tomer.fadingtextview.FadingTextView>
+
+
+            </TableLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

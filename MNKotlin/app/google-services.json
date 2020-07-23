@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "115795970641",
+    "firebase_url": "https://meeatnowkotlin.firebaseio.com",
+    "project_id": "meeatnowkotlin",
+    "storage_bucket": "meeatnowkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115795970641:android:33dc61f209d2eaf7200670",
+        "android_client_info": {
+          "package_name": "org.first.mnkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115795970641-015eln6ug28ggflrbb53oqu5o9681n4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.first.mnkotlin",
+            "certificate_hash": "429a87a593631f71381d5fc6364a58f5676f42af"
+          }
+        },
+        {
+          "client_id": "115795970641-ug4krk74p78qhtbscd4b2lgmfh8q2roo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXTpow-LiYrPeI3-uS5xhB6htYSVYmp5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115795970641-ug4krk74p78qhtbscd4b2lgmfh8q2roo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
